@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Latest Technology Insights</title>
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    {% comment %} <!-- NAVIGATION -->
+    <header class="bg-white border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <a href="#" class="text-2xl font-extrabold text-blue-700">
+                Tech<span class="text-gray-900">Blog.</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="text-blue-700">Home</a>
+                <a href="#" class="hover:text-blue-700">Technology</a>
+                <a href="#" class="hover:text-blue-700">AI & Innovation</a>
+                <a href="#" class="hover:text-blue-700">Tutorials</a>
+                <a href="#" class="hover:text-blue-700">About Us</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="text-gray-600 text-xl" aria-label="Search">
+                    &#9906;
+                </button>
+                <a href="#newsletter"
+                   class="hidden sm:block bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-800">
+                    Subscribe
+                </a>
+            </div>
+
+        </nav>
+    </header> {% endcomment %}
+
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-10">
+
+        <div class="mb-8">
+            <p class="text-blue-700 font-semibold text-sm uppercase tracking-widest mb-3">
+                Technology & Knowledge
+            </p>
+
+            <h1 class="text-4xl md:text-5xl font-extrabold max-w-3xl leading-tight">
+                Explore Ideas. Discover Technology. Stay Informed.
+            </h1>
+
+            <p class="text-gray-500 mt-4 max-w-2xl leading-7">
+                Discover the latest insights, tutorials, technology trends,
+                digital skills and innovations shaping our world.
+            </p>
+        </div>
+
+        <!-- FEATURED POST -->
+        <div class="grid md:grid-cols-2 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+
+            <div class="h-72 md:h-full">
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+                    alt="Artificial Intelligence Technology"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+            <div class="p-8 md:p-12 flex flex-col justify-center">
+
+                <span class="text-blue-700 font-bold text-sm uppercase">
+                    Featured Article
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 leading-tight">
+                    How Artificial Intelligence Is Transforming the Future of Work
+                </h2>
+
+                <p class="text-gray-500 mt-5 leading-7">
+                    Discover how AI is changing businesses, creating new
+                    career opportunities and transforming how professionals
+                    work across different industries.
+                </p>
+
+                <div class="flex items-center gap-3 mt-6">
+                    <img
+                        src="https://i.pravatar.cc/100?img=12"
+                        alt="Author"
+                        class="w-10 h-10 rounded-full"
+                    >
+
+                    <div>
+                        <p class="text-sm font-semibold">Charles Omeke</p>
+                        <p class="text-xs text-gray-400">October 30, 2026 · 8 min read</p>
+                    </div>
+                </div>
+
+                <a href="#"
+                   class="mt-8 inline-block bg-blue-700 text-white px-6 py-3 rounded-lg text-sm font-semibold w-fit hover:bg-blue-800">
+                    Read Full Article →
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORY SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+
+        <div class="flex flex-wrap gap-3">
+
+            <a href="#" class="bg-blue-700 text-white px-5 py-2 rounded-full text-sm">
+                All Posts
+            </a>
+
+            <a href="#" class="bg-white border px-5 py-2 rounded-full text-sm hover:bg-blue-50">
+                Artificial Intelligence
+            </a>
+
+            <a href="#" class="bg-white border px-5 py-2 rounded-full text-sm hover:bg-blue-50">
+                Technology
+            </a>
+
+            <a href="#" class="bg-white border px-5 py-2 rounded-full text-sm hover:bg-blue-50">
+                Web Development
+            </a>
+
+            <a href="#" class="bg-white border px-5 py-2 rounded-full text-sm hover:bg-blue-50">
+                Digital Marketing
+            </a>
+
+            <a href="#" class="bg-white border px-5 py-2 rounded-full text-sm hover:bg-blue-50">
+                Career
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN BLOG CONTENT -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="flex justify-between items-center mb-8">
+            <div>
+                <h2 class="text-3xl font-extrabold">Latest Articles</h2>
+                <p class="text-gray-500 mt-2">Explore our latest stories and insights.</p>
+            </div>
+
+            <a href="#" class="text-blue-700 font-semibold text-sm hidden sm:block">
+                View All Articles →
+            </a>
+        </div>
+
+
+        <div class="grid lg:grid-cols-3 gap-8">
+
+            <!-- BLOG POSTS -->
+            <div class="lg:col-span-2 grid sm:grid-cols-2 gap-7">
+
+                <!-- POST 1 -->
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                    <img
+                        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800"
+                        alt="Artificial Intelligence"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-700 uppercase">
+                            Artificial Intelligence
+                        </span>
+
+                        <h3 class="text-xl font-bold mt-3 leading-snug hover:text-blue-700">
+                            <a href="#">10 AI Tools Every Professional Should Know in 2026</a>
+                        </h3>
+
+                        <p class="text-gray-500 text-sm mt-3 leading-6">
+                            Explore powerful AI tools that can improve your
+                            productivity and transform your workflow.
+                        </p>
+
+                        <div class="flex justify-between items-center mt-6 text-xs text-gray-400">
+                            <span>Charles Omeke</span>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- POST 2 -->
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                    <img
+                        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800"
+                        alt="Web Development"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-700 uppercase">
+                            Web Development
+                        </span>
+
+                        <h3 class="text-xl font-bold mt-3 leading-snug hover:text-blue-700">
+                            <a href="#">How to Become a Full Stack Developer in 2026</a>
+                        </h3>
+
+                        <p class="text-gray-500 text-sm mt-3 leading-6">
+                            Learn the essential programming languages,
+                            frameworks and skills required to become a developer.
+                        </p>
+
+                        <div class="flex justify-between items-center mt-6 text-xs text-gray-400">
+                            <span>Charles Omeke</span>
+                            <span>10 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- POST 3 -->
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                        alt="Data Analytics"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-700 uppercase">
+                            Data Analytics
+                        </span>
+
+                        <h3 class="text-xl font-bold mt-3 leading-snug hover:text-blue-700">
+                            <a href="#">Why Data Analytics Is One of the Most Valuable Skills Today</a>
+                        </h3>
+
+                        <p class="text-gray-500 text-sm mt-3 leading-6">
+                            Understand how data analytics helps businesses
+                            make smarter decisions.
+                        </p>
+
+                        <div class="flex justify-between items-center mt-6 text-xs text-gray-400">
+                            <span>Charles Omeke</span>
+                            <span>7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- POST 4 -->
+                <article class="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+                    <img
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=800"
+                        alt="UI UX Design"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-700 uppercase">
+                            UI/UX Design
+                        </span>
+
+                        <h3 class="text-xl font-bold mt-3 leading-snug hover:text-blue-700">
+                            <a href="#">How to Start a Career in UI/UX Product Design</a>
+                        </h3>
+
+                        <p class="text-gray-500 text-sm mt-3 leading-6">
+                            Discover the tools, processes and design
+                            principles every beginner needs to understand.
+                        </p>
+
+                        <div class="flex justify-between items-center mt-6 text-xs text-gray-400">
+                            <span>Charles Omeke</span>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+            <aside class="space-y-8">
+
+                <!-- SEARCH -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg mb-4">Search Articles</h3>
+
+                    <form class="flex">
+                        <input
+                            type="search"
+                            placeholder="Search blog..."
+                            class="w-full border rounded-l-lg px-4 py-3 text-sm outline-none focus:border-blue-700"
+                        >
+
+                        <button type="submit"
+                            class="bg-blue-700 text-white px-4 rounded-r-lg">
+                            Search
+                        </button>
+                    </form>
+                </div>
+
+
+                <!-- POPULAR POSTS -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg mb-5">Popular Posts</h3>
+
+                    <div class="space-y-5">
+
+                        <div class="flex gap-4">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200"
+                                 class="w-20 h-20 object-cover rounded-lg" alt="AI">
+
+                            <div>
+                                <h4 class="font-semibold text-sm leading-5">
+                                    The Future of Artificial Intelligence
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-2">October 25, 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200"
+                                 class="w-20 h-20 object-cover rounded-lg" alt="Technology">
+
+                            <div>
+                                <h4 class="font-semibold text-sm leading-5">
+                                    Top Technology Skills to Learn
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-2">October 20, 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200"
+                                 class="w-20 h-20 object-cover rounded-lg" alt="Coding">
+
+                            <div>
+                                <h4 class="font-semibold text-sm leading-5">
+                                    Beginner's Guide to Programming
+                                </h4>
+                                <p class="text-xs text-gray-400 mt-2">October 15, 2026</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- CATEGORIES -->
+                <div class="bg-white p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-lg mb-5">Categories</h3>
+
+                    <ul class="space-y-4 text-sm text-gray-600">
+                        <li class="flex justify-between">
+                            <a href="#">Artificial Intelligence</a>
+                            <span>12</span>
+                        </li>
+
+                        <li class="flex justify-between">
+                            <a href="#">Web Development</a>
+                            <span>18</span>
+                        </li>
+
+                        <li class="flex justify-between">
+                            <a href="#">Data Analytics</a>
+                            <span>9</span>
+                        </li>
+
+                        <li class="flex justify-between">
+                            <a href="#">Digital Marketing</a>
+                            <span>15</span>
+                        </li>
+
+                        <li class="flex justify-between">
+                            <a href="#">Career Development</a>
+                            <span>8</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="bg-blue-700 py-16 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+
+            <h2 class="text-3xl font-extrabold text-white">
+                Stay Updated With Tech Insights
+            </h2>
+
+            <p class="text-blue-100 mt-4">
+                Subscribe to our newsletter and receive the latest
+                articles, tutorials and technology updates.
+            </p>
+
+            <form class="mt-8 flex flex-col sm:flex-row gap-3">
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                    class="flex-1 px-5 py-4 rounded-lg outline-none"
+                >
+
+                <button type="submit"
+                    class="bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-black">
+                    Subscribe
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-gray-400 py-12 px-6">
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+
+            <div>
+                <h2 class="text-2xl font-extrabold text-white">
+                    TechBlog.
+                </h2>
+
+                <p class="mt-4 text-sm leading-7">
+                    Your destination for technology news,
+                    educational resources, digital skills
+                    and industry insights.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-white font-bold mb-4">Quick Links</h3>
+
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Blog</a></li>
+                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-bold mb-4">Contact</h3>
+
+                <p class="text-sm mb-3">Port Harcourt, Nigeria</p>
+                <p class="text-sm mb-3">info@example.com</p>
+                <p class="text-sm">+234 800 000 0000</p>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-10 pt-6 text-center text-sm">
+            &copy; 2026 TechBlog. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
